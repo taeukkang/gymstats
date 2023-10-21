@@ -12,6 +12,9 @@ async function getTodaysVisit() {
         gte: todayAtMidnight,
       },
     },
+    orderBy: {
+      checkIn: "desc",
+    },
   });
 
   return visit;
@@ -24,7 +27,7 @@ export default async function Home() {
       <div className="flex flex-col items-center text-center">
         <div className="text-5xl">Did Taeuk go to the gym today?</div>
         <div>
-          {visit?.checkIn.toISOString()} at {visit?.address}
+          On {visit?.checkIn.toLocaleString()} at {visit?.address}
         </div>
       </div>
     </main>
