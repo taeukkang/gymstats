@@ -1,5 +1,7 @@
 import prisma from "@/lib/prisma";
 
+export const dynamic = "force-dynamic";
+
 async function getTodaysVisit() {
   const todayAtMidnight = new Date();
   todayAtMidnight.setHours(0, 0, 0, 0);
