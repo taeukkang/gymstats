@@ -10,8 +10,14 @@
     "postinstall": "prisma generate"
   },
   "dependencies": {
+    "@chakra-ui/next-js": "^2.1.5",
+    "@chakra-ui/react": "^2.8.1",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
     "@prisma/client": "5.4.2",
     "@vercel/postgres": "^0.5.0",
+    "date-fns": "^2.30.0",
+    "framer-motion": "^10.16.4",
     "next": "13.5.4",
     "react": "^18",
     "react-dom": "^18"
